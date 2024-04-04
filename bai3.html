@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("nhập x");
+        let b = +prompt("nhập y");
+        function chuViHCN(a, b) {
+            let c = (a+b)*2;
+            console.log("chu vi hình chữ nhật =", c);
+        }
+        chuViHCN(a, b);
+        function dienTichHCN(a, b) {
+            let c = a*b;
+            console.log("diện tích hình chữ nhật =", c);
+        }
+        dienTichHCN(a, b);
+        function dienTichTron(banKinh) {
+        const chuVi = 2 * Math.PI * banKinh;
+        const dienTich = Math.PI * (banKinh*banKinh);
+        console.log("chu vi hình tròn = ",chuVi);
+        console.log("diện tích hình tròn = ",dienTich);
+        }
+        dienTichTron(a);
+    </script>
+</body>
+</html>
